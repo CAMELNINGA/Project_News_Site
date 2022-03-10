@@ -5,7 +5,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-COPY ../engine/examples ./
+COPY ..Project_News_Site/ ./
 RUN dotnet publish -c Release -o out
 
 
