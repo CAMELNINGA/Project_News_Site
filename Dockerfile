@@ -5,7 +5,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-COPY ..Project_News_Site/ ./
+COPY . ./
 RUN dotnet publish -c Release -o out
 
 
